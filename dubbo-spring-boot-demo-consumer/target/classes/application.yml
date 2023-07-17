@@ -1,0 +1,15 @@
+server:
+  port: 8100
+
+dubbo:
+  application:
+    name: dubbo-spring-boot-demo-consumer
+  protocol:
+    name: dubbo
+    port: -1
+  registry:
+    address: zookeeper://${zookeeper.address:127.0.0.1}:${zookeeper.port:2181}
+
+logging:
+  level:
+    root: info
